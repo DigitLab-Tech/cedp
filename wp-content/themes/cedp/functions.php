@@ -15,5 +15,10 @@ function add_ajax_script(){
 add_action('wp_ajax_nopriv_send_contact_form', 'send_contact_form');
 add_action('wp_ajax_send_contact_form', 'send_contact_form');
 function send_contact_form(){
-	wp_die('test');
+	$to = "cedp.solutions@gmail.com";
+	$subject = "My subject";
+	$txt = "Hello world!";
+	$headers = "From: cedp.solutions@gmail.com";
+
+	mail($to,$subject,$txt,$headers);
 }
