@@ -174,7 +174,7 @@ if ( is_user_logged_in() ) {
 	 */
 	do_action( "wp_ajax_{$action}" );
 } else {
-	// If no action is registered, return a Bad Request response.
+	// If no action is registered, return a Bad Request response.	
 	if ( ! has_action( "wp_ajax_nopriv_{$action}" ) ) {
 		wp_die( '0', 400 );
 	}
