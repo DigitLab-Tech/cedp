@@ -1,0 +1,180 @@
+.form-container{
+	margin:0px auto;
+  background-color: rgba(255,255,255,0.5);
+	border-radius:2px;
+  font-family: Dosis, Arial, Helvetica, sans-serif;
+  position: relative;
+  min-height: 400px;
+  padding-top:10px;
+  color: #4d524d;
+  max-width: 350px;
+}
+.form-container h1{
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0px 0px 20px 0px;
+	color: #5C5C5C;
+	font-size:x-large;
+}
+.form-container ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+  min-height: 400px;
+}
+.form-container li{
+	display: block;
+	padding: 9px;
+	border:1px solid #DDDDDD;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+
+.form-container li.alert{
+	border:1px solid #ff291f;
+}
+
+.form-container li > label{
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: #4d524d;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.form-container li.alert > label{
+	color: #ff291f;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="datetime"],
+.form-container input[type="email"],
+.form-container input[type="number"],
+.form-container input[type="search"],
+.form-container input[type="time"],
+.form-container input[type="url"],
+.form-container input[type="password"],
+.form-container textarea,
+.form-container select
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #B9B9B9;
+}
+.form-container input[type="text"]:focus,
+.form-container input[type="date"]:focus,
+.form-container input[type="datetime"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="search"]:focus,
+.form-container input[type="time"]:focus,
+.form-container input[type="url"]:focus,
+.form-container input[type="password"]:focus,
+.form-container textarea:focus,
+.form-container select:focus
+{
+    color: #B9B9B9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #B9B9B9;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-container li > span{
+	background: #F3F3F3;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #B9B9B9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.form-container textarea{
+	resize:none;
+  height:150px;
+}
+.form-container input[type="submit"],
+.form-container  input[type="button"]{
+	background: #a4e200;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-radius: 3px;
+	color:white;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+.form-container input[type="submit"]:hover,
+.form-container input[type="button"]:hover{
+	background: #4d524d;
+	color:#fff;
+}
+
+.form-wrapper{
+  padding:20px;
+}
+
+.form-header{
+  padding-bottom: 20px;
+}
+
+.form-body{
+  padding-top:3px;
+  overflow-x: hidden;
+}
+
+.form-footer{
+  padding-top:20px;
+}
+
+.form-message-container{
+  text-align: center;
+  width:0%;
+  opacity:0;
+}
+
+.form-content{
+  width:100%;
+}
+
+.form-content, .form-message-container{
+  transition: all 0.5s;
+}
+
+.form-container.submited .form-content{
+  width:0%;
+  opacity:0;
+}
+
+.form-container.submited .form-message-container{
+  width:100%;
+  opacity: 1;
+}

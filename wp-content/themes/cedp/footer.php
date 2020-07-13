@@ -1,57 +1,7 @@
 
 			<footer id="site-footer" role="contentinfo" class="header-footer-group">
-				<div id="contact" class="container">
-					<h3>Me joindre</h3>
-				  <form onsubmit="sendContactForm(event)">
-						<div class='form-wrapper'>
-							<div class="flex-row">
-								<div class="input-wrapper">
-									<div class="label-wrapper">
-										<label for="fname">Prénom</label>
-									</div>
-						    	<input type="text" id="fname" name="firstname" placeholder="Prénom" required>
-								</div>
-								<div class="input-wrapper">
-									<div class="label-wrapper">
-										<label for="lname">Nom</label>
-									</div>
-						    	<input type="text" id="lname" name="lastname" placeholder="Nom" required>
-								</div>
-							</div>
-							<div class="flex-row">
-								<div class="input-wrapper">
-									<div class="label-wrapper">
-										<label for="email">Courriel</label>
-									</div>
-									<input type="text" id="email" name="email" placeholder="Courriel" required>
-								</div>
-								<div class="input-wrapper">
-									<div class="label-wrapper">
-										<label for="phone">Téléphone</label>
-									</div>
-									<input type="text" id="phone" name="phone" placeholder="Téléphone">
-								</div>
-							</div>
-							<div class="flex-row">
-								<div class="input-wrapper">
-									<div class="label-wrapper">
-										<label for="activity">Secteur d'activité</label>
-									</div>
-									<input type="text" id="activity" name="activity" placeholder="Secteur d'activité">
-								</div>
-							</div>
-							<div class="flex-row">
-								<div class="input-wrapper">
-						    	<textarea id="subject" name="subject" placeholder="Que puis-je faire pour vous?" style="height:200px"></textarea>
-								</div>
-							</div>
-							<div class="flex-row">
-								<div class="input-wrapper">
-						    	<input type="submit" class="right" value="Submit">
-								</div>
-							</div>
-						</div>
-				  </form>
+				<div id="contact" class="form-container flex-container flex-justify-center">
+					<?php do_action('cedp_render_contact') ?>
 				</div>
 
 				<div class="section-inner">
